@@ -3,11 +3,15 @@ package com.bytelegend;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
+import java.util.Random;
+
 public class SwapperTest {
     @Test
     public void test() {
-        Point point = new Point(100, 200);
+        int x = new Random().nextInt(100);
+        int y = new Random().nextInt(100);
+        Point point = new Point(x, y);
         Swapper.swap(point);
-        Assertions.assertEquals("(200,100)", point.toString());
+        Assertions.assertEquals("(" + y + "," + x + ")", point.toString());
     }
 }
