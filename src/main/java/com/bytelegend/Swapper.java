@@ -1,9 +1,8 @@
 package com.bytelegend;
 
 public class Swapper {
-    public static void swap(Point p) {
-       p.x=200;
-       p.y=100;
+    public static void swap(Point point) {
+        swap(point.x, point.y);
     }
 
     public static void swap(int x, int y) {
