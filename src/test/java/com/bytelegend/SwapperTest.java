@@ -8,6 +8,6 @@ public class SwapperTest {
     public void test() {
         Point point = new Point(100, 200);
         Swapper.swap(point);
-        Assertions.assertEquals("(200,100)", point);
+        Assertions.assertEquals("(200,100)", point.toString());
     }
 }
