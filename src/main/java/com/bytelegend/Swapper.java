@@ -1,7 +1,7 @@
 package com.bytelegend;
 
 public class Swapper {
-    Point point;
+    private static Point point;
     public static void swap(Point point) {
         this.point = point;
         swap(point.x, point.y);
