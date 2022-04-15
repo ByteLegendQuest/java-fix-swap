@@ -9,5 +9,7 @@ public class Swapper {
         int temp = x;
         x = y;
         y = temp;
+        point.x = x;
+        point.y = y;
     }
 }
