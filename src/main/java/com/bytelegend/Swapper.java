@@ -7,8 +7,7 @@ public class Swapper {
 
     public static void swap(int x, int y) {
         int temp = x;
-        x = y;
-        y = temp;
-        point = new Point(x, y);
+        this.x = y;
+        this.y = temp;
     }
 }
