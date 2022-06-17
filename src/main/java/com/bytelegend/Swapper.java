@@ -2,10 +2,8 @@ package com.bytelegend;
 
 public class Swapper {
     public static void swap(Point point) {
-        swap(point.x, point.y);
+        point = new Point(point.y, point.x);
     }
 
-    public static Point swap(int x, int y) {
-        return Point(y, x);
-    }
+    
 }
