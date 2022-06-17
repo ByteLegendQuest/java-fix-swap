@@ -6,9 +6,6 @@ public class Swapper {
     }
 
     public static Point swap(int x, int y) {
-        int temp = x;
-        x = y;
-        y = temp;
-        return Point(x, y);
+        return Point(y, x);
     }
 }
