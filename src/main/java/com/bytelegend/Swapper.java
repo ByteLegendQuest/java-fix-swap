@@ -5,7 +5,7 @@ public class Swapper {
         swap(point.x, point.y, point);
     }
 
-    public static void swap(int x, int y，Point point) {
+    public static void swap(int x, int y, Point point) {
         int temp = x;
         x = y;
         y = temp;
