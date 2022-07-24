@@ -5,9 +5,9 @@ public class Swapper {
         swap(point.x, point.y);
     }
 
-    public static void swap(int x, int y) {
-        int temp = x;
-        x = y;
-        y = temp;
+    public static void swap(int sourceValue, int toSwapValue) {
+        int temp = sourceValue;
+        sourceValue = toSwapValue;
+        toSwapValue = temp;
     }
 }
