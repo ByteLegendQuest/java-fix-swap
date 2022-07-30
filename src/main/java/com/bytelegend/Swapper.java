@@ -1,13 +1,23 @@
 package com.bytelegend;
 
-public class Swapper {
-    public static void swap(Point point) {
-        swap(point.x, point.y);
+public class Point {
+    public int x;
+    public int y;
+
+    public Point(int x, int y) {
+        this.x = x;
+        this.y = y;
     }
 
-    public static void swap(int x, int y) {
-        int temp = x;
-        x = y;
-        y = temp;
+    @Override
+    public String toString() {
+        return "(" + x + "," + y + ")";
+    }
+
+    public static void main(String[] args) {
+        Point point = new Point(1, 2);
+        System.out.println("Before: " + point);
+        Swapper.swap(point);
+        System.out.println("After: " + point);
     }
 }
