@@ -2,12 +2,15 @@ package com.bytelegend;
 
 public class Swapper {
     public static void swap(Point point) {
-        swap(point.x, point.y);
+        int []a=new int[2];
+        a[0]=point.x;
+        a[1]=point.y;
+        swap(a);
     }
 
-    public static void swap(int x, int y) {
-        int temp = x;
-        x = y;
-        y = temp;
+    public static void swap(int[]a) {
+        int temp = a[0];
+        a[0] = a[1];
+        a[1] = temp;
     }
 }
