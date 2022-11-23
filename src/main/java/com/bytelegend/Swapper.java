@@ -2,7 +2,7 @@ package com.bytelegend;
 
 public class Swapper {
     public static void swap(Point point) {
-        swap(point);
+        swap1(point);
     }
 
     private static void swap1(Point point) {
