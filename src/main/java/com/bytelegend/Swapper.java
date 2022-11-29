@@ -9,5 +9,6 @@ public class Swapper {
         int temp = x;
         x = y;
         y = temp;
+        new Point(x,y);
     }
 }
